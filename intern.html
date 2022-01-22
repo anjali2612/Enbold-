@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Embold</title>
+        <meta name="description" content="">
+        <meta name="author" content="Cemre Tellioğlu Tunçay">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=latin-ext" rel="stylesheet">
+       <script src="/path/to/cdn/jquery.min.js"></script>
+<script src="/path/to/local/tableScroller.js"></script>
+        
+        <!--<link href="css/responsive.css" rel="stylesheet">-->
+        <link href="Stylee.css" rel="stylesheet">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="enbo">
+            <img src="embold-logo.svg" alt="enbold" style="width:130pxpx;height:34px;" >
+            </div>
+            <div><h2>RENEE MCKLELVEK<br>
+                    Account Settings</h2> 
+                </div> 
+                <hr>
+            </div>
+            <div class="UserList">
+                <h1>User List</h1>
+            </div>
+            <div class="area"></div><nav class="main-menu" >   
+        <div  id="main" style="width: 100%; margin-left: -30%;" >
+    <button class="openbtn" onclick="openNav()">☰</button >  
+</div>
+                <ul>
+                    <li>
+                        <a href="http://justinfarrow.com">
+                            <i class="fa fa-search fa-2x" style="margin-top: 9%;"></i>
+                            <span class="nav-text">
+                                Search
+                            </span>
+                        </a>
+                      
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-home fa-2x"></i>
+                            <span class="nav-text">
+                                home
+                            </span>
+                        </a>
+                        
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                           <i class="fa fa-area-chart fa-2x"></i>
+                            <span class="nav-text">
+                                Area
+                            </span>
+                        </a>
+                        
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                           <i class="fa fa-users fa-2x"></i>
+                            <span class="nav-text">
+                                Users
+                            </span>
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-cog fa-2x"></i>
+                            <span class="nav-text">
+                                Settings
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">× </a>
+    <a href="https://www.freepnglogos.com/uploads/search-png/search-icon-endless-icons-33.png"></a>
+    <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASUAAACsCAMAAAAKcUrhAAAAclBMVEX29vYAAAD9/f37+/tERERoaGjPz894eHjf39/q6upeXl4oKCji4uKvr6/e3t78/PwODg6pqakbGxujo6O7u7uysrIeHh7JyckVFRXBwcGSkpITExMLCwtSUlI+Pj6fn5+BgYFwcHCKioo2NjZKSkotLS2qAGqmAAAEqElEQVR4nO2cbVvaMBhG20QRtQLitA4czJf9/7840NWmzZ32GbTQ5rnPR+ilzTE5lgJJEkIIIYQQQgghhJAhMJ/Nz30Kw8c8pg/m3CcxdHaSUmpqwfxI99xTUwP/JFFTE9+SqCnMZ5MK2CZMRRI1YZzlxkUXwpNETT5AklJN1uyw8KlakxS3yeZXm4vfEzRwcw8laZxNr18Df/NfzAYlqdNkXouBr+oDb5CkTJPNy4Fn1acaJenSZK7Kca8qa65FkqqEzz/KYV+6w26VpGk22dty1DfOqAWSFGkKWDJ3AklpeqdEE7YkmkmKZhO0BCXd5rfgUR2akCUo6Skz2ZNWTcASbNJzZhObPYNnNLTJtxSUlOjV5FmCy22Zfd0ysNlS5aKrWwo0qbivYnW2qWapRZJWTVVLsEnrzL1DZ7M1OCbyNlUttUvSqcm19Ipu3y6z+r1ehQl3LaHiOOG+1ptwi152oJlk8vRH4UGdpmZLa1dS6mrS1aZGS46kyecDP5VqarK0rM6ktDqbNCW8wdLT1JOUKm1T2NISSXI1TfXMpqCltb/cvNmkpk0hS4t6uEuchC+UaApYAuGGs0nJosOWYLiRpqmOhBtkKRBuqAnNptgWHbwLsGhabnVNCtqEJZUz6WdAkpvwaeyaGu9xBz4tCGZT3AnHt2+nIklqEo7fUpJKqmiK9w2otnCHm1Sg4PLy8HAjTZEmHEoShhtpggkfu6bjwl0S9R2CY8Nd8hhvwuE3Al7+r0meB5u9NFkcHV2EG3iIK+E43IdKcmdTRC99saTZAU3yNc1i0dRduJGmSBLeZbihphgSDiUdHG7gIYaEt4Vb9ll4REQJbwv34ZIiSjj+EFc3kiqaxvw+XVu48Vd05TzGkPC2cB8rqTXhY9DUX7hLRp9wi94z6ijcSBNMeI6/jj8gQCo6CzfUBBL+cq7BC5k/gCF12aQCp03g2Ydhby03/+Wdcafhhpr8hP8atiXrnfFz98vtC2fReS99F8MOk62fb+fhhpq8hA/c0qb2R+1PUkVTbQpvhm1p/lY93VkvTSq4DyUc7KUyKDL3ZBf9SnK2rajNputzDV+I2Zbn+ty3pDTdwoRvB3/xbVbFub6XlwDoKqprTdP34rHVwNfbHpN/XjOtV8m3pG14lB1qSlafl+Ef+Qgk7Tc2yyb5JCk3oOhvJu0pt9Qxye73TgN7qg0Qa8tT7VlSZech9/eOit4lxbBBU69NKhj+/7RmTjCT9ox7Np1I0rg1nUzSmDXZ00naaRrpf7fEbNoH1xmbsU4mc3FCSxe0REu0REvt0JIEWpKALF1eBfjjHRo6csdl5JYmJsCNd2joyB31L9VHZylwiYwsBX+wpSVaoiUfWpJASxJoSQItSaAlCbQkgZYk0JIEWpJASxJoSQItSaAlCbQkgZYk0JIEWpJASxKQpfwak9DSYdASLX1DSxJoSQItSaAlCbQkgZYk0JIEWpJASxJoSQItSaAlCbQkgZYk0JIEWpJASxJoSQItSaAlCbQkgZYk0JKE+XE7wfyfpe1Yd11I7P3lETQMe3ZTP/hutJL223odQdMP9g4esSRCCCGEEEIIIeQs/AXcfVpDUi79ZQAAAABJRU5ErkJggg=="></a>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbRLWGRs6lHxGJMM7d8eXm5CwDjZgm6qdL0Q&usqp=CAU"></a>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdJ3sK3N-PT5wfvvR3czkYyyovi-mtk20bg&usqp=CAU"></a>
+  </div>
+  
+        
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+    
+        <div class="sear">
+<input type="button" onclick="CreateTableFromJSON()" value="Search" style="width:280px;height:34px;border-radius: 4px;padding: 5px 5px 5px -2px;" />
+<p id="showData"></p>    
+</div>
+
+<div class="udetail">
+    <style> 
+        .option1 { 
+          display: inline-block; /* show on the same line */ 
+          padding-right: 34%; /* small gap on the right of each header */ 
+          padding-left: -19%;
+        } 
+      </style> 
+      <h3 class="option1">New User Details</h3> 
+      <h3 class="option1">Profile Picture</h3>     <hr>
+    <label for="name"><b></b></label>
+    <input type="text" placeholder="UserName" name="name" id="name" pattern="[a-z'-'\s]*" title="Username should only contain lowercase letters." required>
+    <label for="email"><b></b></label>
+    <input type="email" placeholder="Email" name="email" id="email" pattern=".+@globex\.com" title="please write valid email address" required>
+</br></br>
+    <label for="name"><b></b></label>
+    <input type="text" placeholder="First Name" name="fname" id="fname" pattern="[A-Za-z'-'\s]*" title="Name start with Captial letter" required>
+
+    <label for="name"><b></b></label>
+    <input type="text" placeholder="Last Name" name="lname" id="lname" pattern="[A-Za-z'-'\s]*" title="Name start with Captial letter" required>
+</br>
+</div>
+<div class="role">
+       <tr> <label for="Roles"></label>
+        <select name="roles" id="roles">
+            <option value="Roles">Roles</option>
+          <option value="Admin">Admin</option>
+          <option value="QA">QA</option>
+          <option value="Developer">Developer</option>
+          <option value="Manager">Manager</option>
+        </select>
+        <br>
+        </tr>
+    </div>
+    <div class="confer">
+       <input type="checkbox" id="mailconfitm" name="mailc" value="mail">
+        <label for="mail"> Send Email Confirmation</label><br></tr>
+      </form>
+    <hr>
+</div>
+<div class="addu">
+    <button type="button" style="width:96px;height:34px;"
+    id="updateButton" 
+    class="btn btn-primary" 
+    onclick="productUpdate();">Add User</button>
+  <div class="canu">
+      <input type="reset" value="Cancel" style="width:96px;height:34px;"></div>
+
+</div>
+
+<div class="row">
+    <div class="small-12 medium-2 large-2 columns">
+        <div class="circle">
+          <img class="profile-pic" src="https://us.123rf.com/450wm/pavelstasevich/pavelstasevich1811/pavelstasevich181101034/112815936-no-image-available-icon-flat-vector.jpg?ver=6">
+   
+        </div>
+        <div class="p-image">
+            <label for="files" class="btn">Select Image</label>
+             <input id="files" style="visibility:hidden;" type="file" type="file" accept="image/*">   
+          </div>
+     </div>
+   </div>
+   </body>
+<script>
+    function CreateTableFromJSON() {
+        var myBooks = [
+            {
+                "Name": "Ada",
+                "Role": "Admin",
+                "Actions": "",
+               
+            },
+            {
+                "Name": "Grace",
+                "Role": "Developer",
+                "Actions": "",
+            },
+            {
+                "Name": "Mangarate",
+                "Role": "QA",
+                "Actions": "",
+
+            }
+        ]
+
+        // EXTRACT VALUE FOR HTML HEADER. 
+        // ('Book ID', 'Book Name', 'Category' and 'Price')
+        var col = [];
+        for (var i = 0; i < myBooks.length; i++) {
+            for (var key in myBooks[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+
+        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");      // TABLE HEADER.
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < myBooks.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = myBooks[i][col[j]];
+            }
+        }
+
+        //FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+       var divContainer = document.getElementById("showData");
+      divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+    }
+    
+</script>
+
+</html>
